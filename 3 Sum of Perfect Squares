@@ -1,0 +1,26 @@
+#include <iostream>
+
+
+using namespace std;
+
+
+int sum_of_squares(int n) {
+    // put your code here...
+    int j, sum = 0;
+
+    for (int i = 1; i <= n; ++i) {
+        j = i * i;
+
+        if (j <= n) {
+            cout << j << endl;
+            sum += j;
+        }
+    }
+
+    cout << sum;
+    return 0;
+}
+
+int main() {
+    sum_of_squares(10); //test
+}
